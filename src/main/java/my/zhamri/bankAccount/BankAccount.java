@@ -1,5 +1,7 @@
 package my.zhamri.bankAccount;
 
+import org.apache.commons.lang3.time.StopWatch;
+
 import java.util.concurrent.TimeUnit;
 
 public class BankAccount {
@@ -20,10 +22,14 @@ public class BankAccount {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
         BankAccount zhamri = new BankAccount();
         new Thread(zhamri::withdraw).start();
         new Thread(zhamri::deposit).start();
         TimeUnit.SECONDS.sleep(2);
         System.out.println("Balance: " + zhamri.money);
+        stopWatch.stop();
+        System.out.println("Execution Time: " + stopWatch.getTime());
     }
 }
