@@ -1,4 +1,4 @@
-package my.zhamri;
+package my.zhamri.bankAccount;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
