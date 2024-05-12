@@ -28,6 +28,7 @@ The name of an assembly language is typically associated with the type of proces
 1. IBM BAL (Basic Assembly Language) - Used on IBM mainframe computers.
 1. Motorola 68000 Assembly - Used on Motorola 68000 processors, found in early personal computers like the Amiga and Atari systems.
 1. AVR Assembly - Used for AVR microcontrollers, common in hobbyist electronics projects.
+1. DSP (Digital Signal Processors): Many radar systems, especially those requiring real-time processing of signal data, use DSPs because of their efficiency in handling signal processing tasks. Common DSPs come from manufacturers like Texas Instruments or Analog Devices, and each DSP family has its own assembly language tailored to optimize signal processing tasks.
 
 ## Example x86 architecture operation `x = x + 3` 
 
